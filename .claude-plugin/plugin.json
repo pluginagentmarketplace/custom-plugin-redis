@@ -1,104 +1,111 @@
 {
-  "name": "Redis Expert Plugin",
-  "id": "claude-plugin-redis",
+  "name": "Developer Roadmap Interactive",
+  "id": "claude-plugin-roadmap",
   "version": "1.0.0",
-  "description": "Ultra-focused Redis expert plugin. Master Redis data structures, patterns, optimization, clustering, and production deployment. Deep expertise in caching strategies, Pub/Sub, transactions, persistence, and advanced use cases.",
+  "description": "Complete developer roadmap system with 65+ roles across 7 specialist pathways. Interactive learning platform with hands-on projects, skills assessment, and personalized career guidance.",
   "author": "Plugin Agent Marketplace",
   "repository": "https://github.com/pluginagentmarketplace/custom-plugin-redis",
   "keywords": [
-    "redis",
-    "caching",
-    "in-memory",
-    "data-structures",
-    "performance",
-    "distributed-systems",
-    "messaging",
-    "sessions",
-    "clustering"
+    "developer-roadmap",
+    "learning-path",
+    "career-development",
+    "skill-building",
+    "interactive-guide",
+    "65-plus-roles",
+    "7-agent-system",
+    "hands-on-projects"
   ],
   "agents": [
     {
-      "id": "redis-expert-agent",
-      "name": "Redis Expert",
-      "description": "Deep Redis expertise covering data structures, caching patterns, persistence, replication, clustering, Pub/Sub, Lua scripting, streams, and production optimization."
+      "id": "frontend-web-agent",
+      "name": "Frontend & Web Specialist",
+      "description": "Master frontend development: HTML, CSS, JavaScript, TypeScript, React, Vue, Angular, Next.js, and modern web technologies. 10+ roles covered."
+    },
+    {
+      "id": "backend-server-agent",
+      "name": "Backend & Server Specialist",
+      "description": "Backend expertise: Node.js, Python, Java, Go, Rust, PHP, Spring Boot, Django, FastAPI. 10+ roles covered."
+    },
+    {
+      "id": "fullstack-frameworks-agent",
+      "name": "Full-Stack & Frameworks Expert",
+      "description": "Full-stack development, framework integration, Next.js, Django, Spring, Laravel, and application architecture. 8+ roles covered."
+    },
+    {
+      "id": "devops-cloud-agent",
+      "name": "DevOps & Cloud Architect",
+      "description": "DevOps, cloud (AWS, GCP, Azure), Docker, Kubernetes, Terraform, CI/CD, infrastructure management. 10+ roles covered."
+    },
+    {
+      "id": "data-ai-ml-agent",
+      "name": "Data, AI & ML Engineer",
+      "description": "Data science, machine learning, AI engineering, data analytics, Big Data platforms. 10+ roles covered."
+    },
+    {
+      "id": "security-qa-agent",
+      "name": "Security & QA Expert",
+      "description": "Cybersecurity, ethical hacking, penetration testing, QA automation, testing frameworks, compliance. 8+ roles covered."
+    },
+    {
+      "id": "advanced-leadership-agent",
+      "name": "Advanced Tech & Leadership",
+      "description": "Advanced languages (Rust, C++, Golang), Blockchain, Product Management, Engineering Leadership, UX Design. 9+ roles covered."
     }
   ],
   "commands": [
     {
-      "id": "redis-learn",
-      "name": "redis-learn",
-      "description": "Learn Redis from fundamentals to advanced patterns with progressive learning paths"
+      "id": "learn",
+      "name": "learn",
+      "description": "Start learning with interactive paths for 65+ developer roles"
     },
     {
-      "id": "redis-patterns",
-      "name": "redis-patterns",
-      "description": "Explore Redis design patterns: caching, sessions, queues, rate limiting, pub/sub, distributed locks"
+      "id": "explore",
+      "name": "explore",
+      "description": "Explore all 7 specialist agents and 65+ available roles"
     },
     {
-      "id": "redis-optimize",
-      "name": "redis-optimize",
-      "description": "Optimize Redis performance, memory usage, replication, and production deployments"
+      "id": "assess",
+      "name": "assess",
+      "description": "Assess your skills and get personalized career recommendations"
     },
     {
-      "id": "redis-code",
-      "name": "redis-code",
-      "description": "Get ready-to-use Redis code examples in Python, Node.js, Java, and Go"
+      "id": "path",
+      "name": "path",
+      "description": "Create your personalized learning path based on career goals"
     }
   ],
   "skills": [
-    {
-      "id": "redis-data-structures",
-      "name": "redis-data-structures",
-      "description": "Master all Redis data structures: strings, lists, sets, sorted sets, hashes, streams with examples"
-    },
-    {
-      "id": "redis-patterns-advanced",
-      "name": "redis-patterns-advanced",
-      "description": "Advanced patterns: cache-aside, write-through, sessions, distributed locks, rate limiting"
-    },
-    {
-      "id": "redis-performance",
-      "name": "redis-performance",
-      "description": "Performance optimization: memory management, pipelining, transactions, Lua scripting"
-    },
-    {
-      "id": "redis-production",
-      "name": "redis-production",
-      "description": "Production deployment: persistence (RDB/AOF), replication, clustering, monitoring, HA"
-    },
-    {
-      "id": "redis-pubsub-streams",
-      "name": "redis-pubsub-streams",
-      "description": "Pub/Sub messaging and Streams: real-time communication, event processing, durability"
-    }
+    {"id": "frontend-basics", "name": "frontend-basics", "description": "HTML5, CSS3, JavaScript fundamentals"},
+    {"id": "frontend-frameworks", "name": "frontend-frameworks", "description": "React, Vue, Angular modern frameworks"},
+    {"id": "frontend-advanced", "name": "frontend-advanced", "description": "Web3, performance, testing, accessibility"},
+    {"id": "backend-languages", "name": "backend-languages", "description": "Node.js, Python, Java, Go, Rust, PHP"},
+    {"id": "backend-frameworks", "name": "backend-frameworks", "description": "Express, Django, Spring, FastAPI, Laravel"},
+    {"id": "databases-sql", "name": "databases-sql", "description": "PostgreSQL, MySQL, SQL design optimization"},
+    {"id": "databases-nosql", "name": "databases-nosql", "description": "MongoDB, Redis, Elasticsearch, NoSQL patterns"},
+    {"id": "fullstack-patterns", "name": "fullstack-patterns", "description": "Full-stack architecture, API design, integration"},
+    {"id": "devops-basics", "name": "devops-basics", "description": "Docker, Git, CI/CD fundamentals"},
+    {"id": "devops-advanced", "name": "devops-advanced", "description": "AWS, GCP, Azure, Kubernetes, Terraform"},
+    {"id": "data-analytics", "name": "data-analytics", "description": "Data analysis, SQL, visualization, BI tools"},
+    {"id": "machine-learning", "name": "machine-learning", "description": "ML models, TensorFlow, PyTorch, algorithms"},
+    {"id": "ai-engineering", "name": "ai-engineering", "description": "LLMs, RAG, prompt engineering, AI agents"},
+    {"id": "security-fundamentals", "name": "security-fundamentals", "description": "Web security, auth, encryption"},
+    {"id": "security-advanced", "name": "security-advanced", "description": "Penetration testing, threat modeling, compliance"},
+    {"id": "qa-automation", "name": "qa-automation", "description": "Testing frameworks, automation, QA practices"},
+    {"id": "blockchain-web3", "name": "blockchain-web3", "description": "Blockchain, smart contracts, Web3, crypto"},
+    {"id": "product-management", "name": "product-management", "description": "Product strategy, roadmapping, user research"},
+    {"id": "engineering-leadership", "name": "engineering-leadership", "description": "Team management, architecture, mentoring"},
+    {"id": "ux-design", "name": "ux-design", "description": "UX/UI design, user research, design systems"}
   ],
   "hooks": {
     "enabled": true,
     "progressTracking": true,
-    "performanceMonitoring": true,
-    "codeValidation": true
+    "skillAssessment": true,
+    "pathRecommendation": true
   },
   "categories": [
-    "databases",
-    "caching",
-    "messaging",
-    "performance",
-    "distributed-systems"
-  ],
-  "tags": [
-    "redis",
-    "in-memory-database",
-    "cache",
-    "messaging-queue",
-    "sessions",
-    "rate-limiting",
-    "distributed-locks",
-    "high-performance",
-    "clustering"
-  ],
-  "resources": {
-    "repository": "https://redis.io",
-    "documentation": "https://redis.io/documentation",
-    "community": "https://redis.io/community"
-  }
+    "learning",
+    "developer-roadmap",
+    "career-path",
+    "interactive-guide"
+  ]
 }

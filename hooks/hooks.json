@@ -1,279 +1,54 @@
 {
   "hooks": [
     {
-      "name": "auto-progress-tracking",
-      "event": "assessment-completed",
-      "description": "Automatically track user progress after completing assessments",
+      "name": "progress-tracking",
+      "event": "learning-milestone-achieved",
+      "description": "Track user progress through learning pathways",
       "enabled": true,
-      "triggers": [
-        "assessment.completed",
-        "quiz.passed",
-        "project.submitted"
-      ],
       "actions": {
         "updateProgress": true,
         "awardBadges": true,
-        "notifyMilestones": true,
-        "suggestNextSteps": true
+        "notifyUser": true
+      }
+    },
+    {
+      "name": "skill-assessment",
+      "event": "assessment-completed",
+      "description": "Record skill assessment results and recommendations",
+      "enabled": true,
+      "actions": {
+        "recordResults": true,
+        "generateRecommendations": true,
+        "updateLearningPath": true
+      }
+    },
+    {
+      "name": "path-customization",
+      "event": "user-creates-path",
+      "description": "Personalize learning path based on user goals",
+      "enabled": true,
+      "actions": {
+        "analyzeGoals": true,
+        "recommendResources": true,
+        "estimateTimeline": true
       }
     },
     {
       "name": "project-validation",
       "event": "project-submission",
-      "description": "Validate submitted projects against acceptance criteria",
+      "description": "Validate submitted projects against requirements",
       "enabled": true,
-      "triggers": [
-        "project.submitted"
-      ],
-      "validations": [
-        "feature-completeness",
-        "code-quality",
-        "performance-standards",
-        "security-requirements",
-        "test-coverage"
-      ],
       "actions": {
-        "runAutomatedTests": true,
-        "performSecurityScan": true,
-        "checkPerformance": true,
-        "generateReport": true
-      }
-    },
-    {
-      "name": "prerequisite-check",
-      "event": "agent-invocation",
-      "description": "Check if user has completed prerequisites before accessing advanced content",
-      "enabled": true,
-      "triggers": [
-        "agent.invoke",
-        "skill.access",
-        "project.start"
-      ],
-      "checks": [
-        "skillPrerequisites",
-        "assessmentScores",
-        "completedProjects",
-        "readiness"
-      ],
-      "actions": {
-        "warnIfNotReady": true,
-        "suggestPrerequisites": true,
-        "blockIfRequired": false,
-        "recommendPriorPath": true
-      }
-    },
-    {
-      "name": "certificate-generation",
-      "event": "learning-path-completed",
-      "description": "Generate and award certificate upon completing full learning paths",
-      "enabled": true,
-      "triggers": [
-        "path.completed",
-        "allAssessmentsPass",
-        "projectsFinished"
-      ],
-      "criteria": {
-        "minimumAssessmentScore": 75,
-        "allProjectsComplete": true,
-        "completionPercentage": 100
-      },
-      "actions": {
-        "generateCertificate": true,
-        "createBadge": true,
-        "updatePortfolio": true,
-        "notifyUser": true,
-        "shareOnLinkedIn": true
-      }
-    },
-    {
-      "name": "learning-recommendations",
-      "event": "assessment-completed",
-      "description": "Provide personalized learning recommendations based on assessment results",
-      "enabled": true,
-      "triggers": [
-        "assessment.completed",
-        "learning-path-started"
-      ],
-      "analysis": [
-        "gapAnalysis",
-        "strengthIdentification",
-        "learningStyle",
-        "timeAvailability",
-        "interestAreas"
-      ],
-      "actions": {
-        "recommendTopics": true,
-        "suggestProjects": true,
-        "prioritizeResources": true,
-        "adjustPacingDifficulty": true
-      }
-    },
-    {
-      "name": "agent-escalation",
-      "event": "user-needs-help",
-      "description": "Route users to the most relevant agent based on their question",
-      "enabled": true,
-      "triggers": [
-        "help.requested",
-        "question.asked",
-        "error.occurred"
-      ],
-      "routing": {
-        "keywords": [
-          "frontend|react|vue|angular",
-          "backend|api|database|node",
-          "devops|deploy|kubernetes|docker",
-          "data|machine learning|ai",
-          "security|test|quality",
-          "advanced|rust|golang|leadership"
-        ],
-        "agentMapping": {
-          "frontend": "agent-01-frontend-web-technologies",
-          "backend": "agent-02-backend-database-systems",
-          "devops": "agent-04-devops-cloud-infrastructure",
-          "data": "agent-05-data-ai-machine-learning",
-          "security": "agent-06-security-testing-quality",
-          "advanced": "agent-07-advanced-technologies-leadership",
-          "fullstack": "agent-03-fullstack-frameworks-integration"
-        }
-      },
-      "actions": {
-        "routeToAgent": true,
-        "provideContext": true,
-        "maintainHistory": true
-      }
-    },
-    {
-      "name": "milestone-celebration",
-      "event": "user-achievement",
-      "description": "Celebrate user milestones and achievements",
-      "enabled": true,
-      "triggers": [
-        "project.completed",
-        "assessment.passed",
-        "streak.milestone",
-        "badge.earned",
-        "certificate.awarded"
-      ],
-      "milestones": [
-        "firstProject",
-        "assessmentPass",
-        "10projects",
-        "learningPathComplete",
-        "certificateEarned",
-        "communityContribution"
-      ],
-      "actions": {
-        "displayCelebration": true,
-        "updateStats": true,
-        "addToPortfolio": true,
-        "notifyNetwork": true,
-        "suggestNextGoals": true
-      }
-    },
-    {
-      "name": "content-updates",
-      "event": "plugin-update",
-      "description": "Notify users of new content, features, and roadmap updates",
-      "enabled": true,
-      "triggers": [
-        "plugin.updated",
-        "content.added",
-        "feature.released"
-      ],
-      "checkFrequency": "weekly",
-      "actions": {
-        "notifyNewContent": true,
-        "highlightNewFeatures": true,
-        "updateRoadmaps": true,
-        "suggestRelevantContent": true
-      }
-    },
-    {
-      "name": "engagement-tracking",
-      "event": "user-activity",
-      "description": "Track user engagement metrics for analytics and personalization",
-      "enabled": true,
-      "triggers": [
-        "command.executed",
-        "content.accessed",
-        "time.milestone"
-      ],
-      "metrics": [
-        "activeHours",
-        "commandUsage",
-        "agentInteractions",
-        "projectsCompleted",
-        "assessmentsTaken",
-        "learningDuration"
-      ],
-      "actions": {
-        "logActivity": true,
-        "updateDashboard": true,
-        "identifyPatterns": true,
-        "personalizeFeed": true,
-        "recognizeStreaks": true
-      }
-    },
-    {
-      "name": "error-recovery",
-      "event": "error-occurred",
-      "description": "Handle errors gracefully and provide recovery options",
-      "enabled": true,
-      "triggers": [
-        "error.network",
-        "error.processing",
-        "error.validation",
-        "timeout.exceeded"
-      ],
-      "handlers": [
-        "retryMechanism",
-        "errorLogging",
-        "userNotification",
-        "fallbackOptions",
-        "agentEscalation"
-      ],
-      "actions": {
-        "logError": true,
-        "notifyUser": true,
-        "suggestWorkaround": true,
-        "escalateIfPersistent": true,
-        "recordAnalytics": true
-      }
-    },
-    {
-      "name": "performance-monitoring",
-      "event": "system-monitoring",
-      "description": "Monitor plugin performance and user experience",
-      "enabled": true,
-      "triggers": [
-        "daily",
-        "performance.degradation",
-        "latency.high"
-      ],
-      "monitoringPoints": [
-        "responseTime",
-        "errorRate",
-        "userSessions",
-        "contentLoading",
-        "agentLatency",
-        "storageUsage"
-      ],
-      "actions": {
-        "trackMetrics": true,
-        "alertOnIssues": true,
-        "optimizeIfNeeded": true,
-        "generateReports": true
+        "checkCompletion": true,
+        "provideFeeds": true,
+        "awardCertificate": true
       }
     }
   ],
   "configuration": {
-    "defaultEnabled": true,
+    "enabled": true,
     "errorHandling": "graceful",
-    "logging": "comprehensive",
-    "analytics": "enabled",
-    "dataRetention": "90days",
-    "privacyMode": "respectful",
-    "userNotifications": "helpful"
+    "logging": "enabled",
+    "analytics": "enabled"
   }
 }

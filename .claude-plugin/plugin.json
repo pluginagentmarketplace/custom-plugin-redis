@@ -1,0 +1,139 @@
+{
+  "name": "Developer Roadmap Interactive Learning System",
+  "id": "claude-plugin-developer-roadmap",
+  "version": "1.0.0",
+  "description": "Comprehensive interactive learning plugin with 7 specialized agents covering 70+ developer roles and career paths from the developer-roadmap project. Features hands-on projects, real-world implementations, and expert guidance.",
+  "author": "Plugin Agent Marketplace",
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-redis",
+  "keywords": [
+    "learning",
+    "developer-roadmap",
+    "career-path",
+    "interactive",
+    "roadmap",
+    "training",
+    "skill-development"
+  ],
+  "agents": [
+    {
+      "id": "frontend-web-agent",
+      "name": "Frontend & Web Technologies",
+      "description": "Expert guidance on HTML, CSS, JavaScript, TypeScript, React, Vue, Angular and modern web development"
+    },
+    {
+      "id": "backend-database-agent",
+      "name": "Backend & Database Systems",
+      "description": "Comprehensive backend development covering Node.js, Python, Java, Spring Boot, databases (PostgreSQL, MongoDB, Redis), and SQL"
+    },
+    {
+      "id": "fullstack-frameworks-agent",
+      "name": "Full-Stack & Framework Integration",
+      "description": "Full-stack development expertise with Next.js, Angular advanced patterns, and framework integration strategies"
+    },
+    {
+      "id": "devops-infrastructure-agent",
+      "name": "DevOps & Cloud Infrastructure",
+      "description": "Infrastructure and deployment knowledge covering DevOps, AWS, Kubernetes, Docker, Terraform, Cloudflare, and System Design"
+    },
+    {
+      "id": "data-ai-ml-agent",
+      "name": "Data, AI & Machine Learning",
+      "description": "Data science and AI/ML expertise for Data Analysts, Engineers, ML Engineers, AI Engineers, Data Scientists, MLOps, Prompt Engineering, and AI Agents"
+    },
+    {
+      "id": "security-testing-agent",
+      "name": "Security & Quality Assurance",
+      "description": "Security and testing excellence covering Cyber Security, QA testing methodologies, and compliance frameworks"
+    },
+    {
+      "id": "advanced-specializations-agent",
+      "name": "Advanced Technologies & Leadership",
+      "description": "Specialized languages (Golang, Rust, C++, Blockchain) and leadership roles (Product Manager, Engineering Manager, UX Design, Technical Writer)"
+    }
+  ],
+  "commands": [
+    {
+      "id": "learn",
+      "name": "learn",
+      "description": "Start interactive learning paths and choose your specialization"
+    },
+    {
+      "id": "browse-agent",
+      "name": "browse-agent",
+      "description": "Explore all 7 specialized agents and their capabilities"
+    },
+    {
+      "id": "assess",
+      "name": "assess",
+      "description": "Evaluate your knowledge with interactive assessments"
+    },
+    {
+      "id": "projects",
+      "name": "projects",
+      "description": "Browse hands-on projects with different difficulty levels"
+    }
+  ],
+  "skills": [
+    {
+      "id": "frontend-technologies",
+      "name": "frontend-technologies",
+      "description": "Frontend development with HTML, CSS, JavaScript, TypeScript, and frameworks"
+    },
+    {
+      "id": "backend-development",
+      "name": "backend-development",
+      "description": "Backend development with Node.js, Python, Java, and frameworks"
+    },
+    {
+      "id": "database-systems",
+      "name": "database-systems",
+      "description": "Database design and management with SQL, PostgreSQL, MongoDB, Redis"
+    },
+    {
+      "id": "devops-cloud",
+      "name": "devops-cloud",
+      "description": "DevOps, cloud platforms, containerization, and infrastructure as code"
+    },
+    {
+      "id": "data-ai-ml",
+      "name": "data-ai-ml",
+      "description": "Data science, machine learning, and AI engineering"
+    },
+    {
+      "id": "security-quality",
+      "name": "security-quality",
+      "description": "Security practices, testing methodologies, and quality assurance"
+    },
+    {
+      "id": "advanced-languages",
+      "name": "advanced-languages",
+      "description": "Advanced programming languages and specialized technologies"
+    }
+  ],
+  "hooks": {
+    "enabled": true,
+    "autoProgress": true,
+    "projectValidation": true,
+    "assessment": true
+  },
+  "categories": [
+    "learning",
+    "career-development",
+    "professional-training",
+    "interactive-guide"
+  ],
+  "tags": [
+    "developer-roadmap",
+    "career-path",
+    "skill-building",
+    "interactive-learning",
+    "hands-on-projects",
+    "70+ roles",
+    "best-practices"
+  ],
+  "resources": {
+    "repository": "https://github.com/kamranahmedse/developer-roadmap",
+    "documentation": "README.md",
+    "learning-path": "LEARNING-PATH.md"
+  }
+}

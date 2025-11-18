@@ -1,0 +1,282 @@
+{
+  "version": "1.0",
+  "description": "Developer Roadmap Interactive Plugin - Hook Configuration",
+  "hooks": {
+    "onAssessmentComplete": {
+      "enabled": true,
+      "description": "Triggered when user completes skills assessment",
+      "actions": [
+        "Save assessment results",
+        "Generate personalized recommendations",
+        "Suggest target roles",
+        "Create initial learning path",
+        "Send congratulations and next steps"
+      ]
+    },
+    "onPathCreated": {
+      "enabled": true,
+      "description": "Triggered when user creates learning path",
+      "actions": [
+        "Store path preferences",
+        "Setup milestone reminders",
+        "Enable progress tracking",
+        "Initialize resource access",
+        "Create calendar with milestones"
+      ]
+    },
+    "onProjectCompleted": {
+      "enabled": true,
+      "description": "Triggered when user completes a project",
+      "actions": [
+        "Validate project submission",
+        "Award skill points",
+        "Update progress metrics",
+        "Suggest next project",
+        "Update portfolio entry",
+        "Check for milestone completion"
+      ]
+    },
+    "onMilestoneAchieved": {
+      "enabled": true,
+      "description": "Triggered when user reaches learning milestone",
+      "actions": [
+        "Send achievement notification",
+        "Award badges/certificates",
+        "Update progress dashboard",
+        "Suggest next phase",
+        "Offer mentoring opportunity",
+        "Share on social media (optional)"
+      ]
+    },
+    "onSkillMastered": {
+      "enabled": true,
+      "description": "Triggered when user masters a skill",
+      "actions": [
+        "Validate skill mastery",
+        "Award certification",
+        "Update role readiness",
+        "Unlock advanced topics",
+        "Suggest job opportunities",
+        "Recommend related skills"
+      ]
+    },
+    "onWeeklyCheckIn": {
+      "enabled": true,
+      "description": "Weekly progress check-in reminder",
+      "schedule": "every Monday 9am",
+      "actions": [
+        "Send progress reminder",
+        "Request weekly update",
+        "Highlight upcoming milestones",
+        "Suggest study schedule adjustment",
+        "Share relevant resources"
+      ]
+    },
+    "onMonthlyReview": {
+      "enabled": true,
+      "description": "Monthly comprehensive review",
+      "schedule": "first Monday of month",
+      "actions": [
+        "Generate monthly report",
+        "Show progress metrics",
+        "Celebrate wins",
+        "Identify blockers",
+        "Suggest adjustments",
+        "Plan next month",
+        "Offer mentoring check-in"
+      ]
+    },
+    "onJobRecommendation": {
+      "enabled": true,
+      "description": "Recommend jobs based on skills progress",
+      "frequency": "when skills threshold reached",
+      "actions": [
+        "Identify matching job opportunities",
+        "Send job alerts",
+        "Prepare application materials",
+        "Conduct mock interview",
+        "Provide interview prep resources",
+        "Track applications"
+      ]
+    },
+    "onSkillGapDetected": {
+      "enabled": true,
+      "description": "Alert when critical skill gaps detected",
+      "actions": [
+        "Identify missing prerequisite",
+        "Recommend foundational course",
+        "Adjust learning path",
+        "Provide catch-up resources",
+        "Extend timeline if needed",
+        "Offer 1-on-1 help"
+      ]
+    },
+    "onCommunityInvite": {
+      "enabled": true,
+      "description": "Invite to learning communities",
+      "frequency": "when community match found",
+      "actions": [
+        "Find relevant communities",
+        "Send invitations",
+        "Facilitate introductions",
+        "Create study groups",
+        "Organize pair programming",
+        "Share resources"
+      ]
+    },
+    "onMentorshipOpportunity": {
+      "enabled": true,
+      "description": "Connect with mentors and mentees",
+      "actions": [
+        "Find mentor matches",
+        "Connect with peers",
+        "Offer mentoring to others",
+        "Schedule check-ins",
+        "Provide mentor resources",
+        "Track mentoring progress"
+      ]
+    },
+    "onCertificationReady": {
+      "enabled": true,
+      "description": "Notify when ready for certification",
+      "actions": [
+        "Validate certification readiness",
+        "Provide exam preparation",
+        "Schedule certification test",
+        "Send study materials",
+        "Track certification progress",
+        "Award digital certificate"
+      ]
+    }
+  },
+  "notifications": {
+    "enabled": true,
+    "channels": ["email", "in-app", "slack"],
+    "frequency": {
+      "urgent": "immediately",
+      "important": "within 1 hour",
+      "routine": "daily digest",
+      "optional": "weekly"
+    },
+    "preferences": {
+      "emailNotifications": true,
+      "slackIntegration": true,
+      "weeklyDigest": true,
+      "achievementNotifications": true,
+      "jobAlerts": true,
+      "mentorshipAlerts": true
+    }
+  },
+  "tracking": {
+    "enabled": true,
+    "metrics": [
+      "learning-hours",
+      "projects-completed",
+      "skills-mastered",
+      "milestones-achieved",
+      "assessment-scores",
+      "role-readiness",
+      "community-engagement",
+      "mentoring-activity"
+    ],
+    "privacy": {
+      "dataEncryption": true,
+      "shareableMetrics": ["public-profile", "verified-skills", "completed-projects"],
+      "dataRetention": "indefinite",
+      "exportOptions": true,
+      "deleteOptions": true
+    }
+  },
+  "gamification": {
+    "enabled": true,
+    "features": {
+      "badges": true,
+      "points": true,
+      "leaderboards": true,
+      "streaks": true,
+      "challenges": true,
+      "achievements": true
+    },
+    "rewards": {
+      "projectCompletion": 100,
+      "skillMastery": 250,
+      "milestoneAchievement": 500,
+      "mentoring": 75,
+      "helpingOthers": 50,
+      "communityEngagement": 25
+    }
+  },
+  "integrations": {
+    "enabled": true,
+    "platforms": [
+      "github",
+      "gitlab",
+      "linkedin",
+      "slack",
+      "discord",
+      "twitter",
+      "calendar"
+    ],
+    "dataSync": {
+      "frequency": "daily",
+      "bidirectional": ["github", "gitlab"],
+      "oneWay": ["linkedin", "twitter"]
+    }
+  },
+  "ai-features": {
+    "enabled": true,
+    "personalization": {
+      "adaptiveContent": true,
+      "recommendationEngine": true,
+      "progressPrediction": true,
+      "skillGapAnalysis": true
+    },
+    "assistance": {
+      "codingHelp": true,
+      "questionAnswering": true,
+      "projectGuidance": true,
+      "careerAdvice": true,
+      "interviewPrep": true
+    }
+  },
+  "schedule": {
+    "enabled": true,
+    "automation": [
+      {
+        "task": "send-weekly-reminder",
+        "day": "Monday",
+        "time": "09:00 UTC",
+        "enabled": true
+      },
+      {
+        "task": "monthly-review",
+        "day": "1st",
+        "time": "09:00 UTC",
+        "enabled": true
+      },
+      {
+        "task": "skill-milestone-check",
+        "frequency": "daily",
+        "time": "08:00 UTC",
+        "enabled": true
+      },
+      {
+        "task": "opportunity-scan",
+        "frequency": "twice-daily",
+        "times": ["09:00 UTC", "17:00 UTC"],
+        "enabled": true
+      }
+    ]
+  },
+  "logging": {
+    "enabled": true,
+    "level": "info",
+    "destination": ".claude-plugin/logs",
+    "retention": "30 days",
+    "audit": {
+      "enabled": true,
+      "trackUserActions": true,
+      "trackSystemEvents": true
+    }
+  }
+}

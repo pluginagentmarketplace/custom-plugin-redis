@@ -1,0 +1,33 @@
+{
+  "name": "redis-assistant-marketplace",
+  "displayName": "Redis Development Assistant",
+  "description": "Master Redis from fundamentals to production with 8 specialized agents and 12 Golden Format skills - inspired by roadmap.sh",
+  "source": "./",
+  "version": "2.0.0",
+  "category": "database",
+  "tags": [
+    "redis",
+    "cache",
+    "database",
+    "nosql",
+    "in-memory",
+    "key-value",
+    "pub-sub",
+    "clustering"
+  ],
+  "owner": {
+    "name": "Dr. Umit Kacar & Muhsin Elcicek",
+    "email": "kacarumit.phd@gmail.com",
+    "organization": "pluginagentmarketplace"
+  },
+  "stats": {
+    "agents": 8,
+    "skills": 12,
+    "commands": 4
+  },
+  "compatibility": {
+    "claudeCode": ">=1.0.0"
+  },
+  "sasmp_version": "1.3.0",
+  "eqhm_enabled": true
+}

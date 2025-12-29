@@ -1,0 +1,26 @@
+# Redis Streams Consumer Group Configuration
+
+stream:
+  name: "events"
+  key: "stream:events"
+
+consumer_group:
+  name: "processors"
+  start_id: "$"  # Only new messages
+
+consumers:
+  - name: "consumer-1"
+    count: 10
+    block: 5000  # ms
+  - name: "consumer-2"
+    count: 10
+    block: 5000
+
+processing:
+  ack_timeout: 30000  # ms
+  retry_count: 3
+  dead_letter_stream: "stream:events:dlq"
+
+monitoring:
+  pending_check_interval: 60  # seconds
+  lag_alert_threshold: 1000

@@ -1,0 +1,24 @@
+# Redis Queue Configuration Template
+
+queue:
+  name: "tasks"
+  key_pattern: "queue:{name}"
+
+  producer:
+    max_size: 10000
+    overflow_policy: "block"  # block, drop, error
+
+  consumer:
+    timeout: 30  # seconds
+    batch_size: 10
+    retry_count: 3
+    retry_delay: 5  # seconds
+
+  dead_letter:
+    enabled: true
+    key_pattern: "dlq:{name}"
+    ttl: 604800  # 7 days
+
+  monitoring:
+    metrics_enabled: true
+    alert_threshold: 1000

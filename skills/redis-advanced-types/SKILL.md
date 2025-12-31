@@ -2,7 +2,7 @@
 name: redis-advanced-types
 description: Master Redis advanced data types - Bitmaps, HyperLogLog, Streams, and Geospatial indexes for specialized use cases
 sasmp_version: "1.3.0"
-bonded_agent: redis-data-structures
+bonded_agent: 02-redis-data-structures
 bond_type: SECONDARY_BOND
 
 # Production Configuration

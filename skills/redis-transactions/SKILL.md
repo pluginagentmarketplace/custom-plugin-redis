@@ -2,7 +2,7 @@
 name: redis-transactions
 description: Master Redis transactions - MULTI/EXEC, WATCH for optimistic locking, Lua scripting, and atomic operation patterns
 sasmp_version: "1.3.0"
-bonded_agent: redis-operations
+bonded_agent: 03-redis-operations
 bond_type: PRIMARY_BOND
 
 # Production Configuration

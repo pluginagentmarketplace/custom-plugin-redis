@@ -2,7 +2,7 @@
 name: redis-cluster
 description: Master Redis Cluster - horizontal scaling, hash slots, resharding, cluster management, and distributed architecture
 sasmp_version: "1.3.0"
-bonded_agent: redis-clustering
+bonded_agent: 06-redis-clustering
 bond_type: PRIMARY_BOND
 
 # Production Configuration

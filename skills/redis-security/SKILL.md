@@ -2,7 +2,7 @@
 name: redis-security
 description: Master Redis security - authentication, ACL, TLS encryption, network hardening, and production security best practices
 sasmp_version: "1.3.0"
-bonded_agent: redis-security
+bonded_agent: 07-redis-security
 bond_type: PRIMARY_BOND
 
 # Production Configuration

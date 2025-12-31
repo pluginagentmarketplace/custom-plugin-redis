@@ -2,7 +2,7 @@
 name: redis-strings
 description: Master Redis Strings - SET, GET, INCR, DECR, atomic counters, binary-safe operations, and caching patterns
 sasmp_version: "1.3.0"
-bonded_agent: redis-data-structures
+bonded_agent: 02-redis-data-structures
 bond_type: PRIMARY_BOND
 
 # Production Configuration

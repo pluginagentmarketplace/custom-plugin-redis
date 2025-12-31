@@ -2,7 +2,7 @@
 name: redis-installation
 description: Complete Redis installation guide for all platforms - Linux, macOS, Docker, and cloud deployments with configuration templates
 sasmp_version: "1.3.0"
-bonded_agent: redis-fundamentals
+bonded_agent: 01-redis-fundamentals
 bond_type: PRIMARY_BOND
 
 # Production Configuration

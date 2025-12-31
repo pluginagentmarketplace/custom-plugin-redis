@@ -2,7 +2,7 @@
 name: redis-performance
 description: Master Redis performance - memory optimization, slow log analysis, benchmarking, monitoring, and tuning strategies
 sasmp_version: "1.3.0"
-bonded_agent: redis-production
+bonded_agent: 08-redis-production
 bond_type: PRIMARY_BOND
 
 # Production Configuration

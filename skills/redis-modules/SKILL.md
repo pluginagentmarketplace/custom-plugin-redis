@@ -2,7 +2,7 @@
 name: redis-modules
 description: Master Redis modules - RedisJSON, RediSearch, RedisTimeSeries, RedisBloom, and extending Redis functionality
 sasmp_version: "1.3.0"
-bonded_agent: redis-production
+bonded_agent: 08-redis-production
 bond_type: SECONDARY_BOND
 
 # Production Configuration

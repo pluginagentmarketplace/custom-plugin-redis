@@ -2,7 +2,7 @@
 name: redis-persistence
 description: Master Redis persistence - RDB snapshots, AOF logging, backup strategies, and disaster recovery planning
 sasmp_version: "1.3.0"
-bonded_agent: redis-persistence
+bonded_agent: 05-redis-persistence
 bond_type: PRIMARY_BOND
 
 # Production Configuration

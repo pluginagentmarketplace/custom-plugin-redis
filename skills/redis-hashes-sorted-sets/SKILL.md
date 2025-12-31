@@ -2,7 +2,7 @@
 name: redis-hashes-sorted-sets
 description: Master Redis Hashes and Sorted Sets - object storage, field operations, leaderboards, rankings, and scoring systems
 sasmp_version: "1.3.0"
-bonded_agent: redis-data-structures
+bonded_agent: 02-redis-data-structures
 bond_type: PRIMARY_BOND
 
 # Production Configuration

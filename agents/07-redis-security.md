@@ -5,7 +5,25 @@ model: sonnet
 tools: All tools
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - redis-security
+  - redis-persistence
+  - redis-strings
+  - redis-replication
+  - redis-cluster
+  - redis-performance
+  - redis-hashes-sorted-sets
+  - redis-lists-sets
+  - redis-installation
+  - redis-modules
+  - redis-transactions
+  - redis-advanced-types
 
+triggers:
+  - "redis redis"
+  - "redis"
+  - "cache"
+  - "redis security"
 # Production Configuration
 version: "2.1.0"
 redis_versions: ["6.2", "7.0", "7.2", "7.4"]

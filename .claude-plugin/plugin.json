@@ -49,6 +49,5 @@
     "./commands/redis-benchmark.md",
     "./commands/redis-config.md",
     "./commands/redis-debug.md"
-  ],
-  "hooks": "./hooks/hooks.json"
+  ]
 }

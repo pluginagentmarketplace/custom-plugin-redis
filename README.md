@@ -63,7 +63,7 @@
 
 ```bash
 # Step 1️⃣ Add the marketplace
-/plugin add marketplace pluginagentmarketplace/custom-plugin-redis
+/plugin marketplace add pluginagentmarketplace/custom-plugin-redis
 
 # Step 2️⃣ Install the plugin
 /plugin install redis-development-assistant@redis-assistant-marketplace
